@@ -22,7 +22,6 @@ class ImageMaker {
         this.bottomText.setAttribute('class', 'bottom-text');
         this.imagePreview.appendChild(this.bottomText);
 
-=
         this.backgroundInput = document.querySelector('select[name="backgroundImage"]');
 
         this.topTextInput = document.querySelector('input[name="topText"]');
