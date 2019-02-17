@@ -25,15 +25,18 @@ class ImageMaker {
         this.backgroundInput = document.querySelector('select[name="backgroundImage"]');
 
         this.topTextInput = document.querySelector('input[name="topText"]');
-
+        this.topTextInputAlign = document.querySelector('select[name="topTextAlign"]');
         this.bottomTextInput = document.querySelector('input[name="bottomText"]');
+        this.bottomTextInputAlign = document.querySelector('select[name="bottomTextAlign"]');
     }
 
     drawPreview(){
   
         this.imagePreview.style.backgroundImage = `url('images/${this.backgroundInput.value}')`;
         this.topText.innerHTML = this.topTextInput.value;
+        this.topText.style.textAlign = this.topTextInputAlign.value; 
         this.bottomText.innerHTML = this.bottomTextInput.value;
+        this.bottomText.style.textAlign = this.bottomTextInputAlign.value;
 
     }
     
