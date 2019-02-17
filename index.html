@@ -19,24 +19,40 @@
     <h1>Image Maker</h1>
     <p>Choose your settings to generate an image.</p>
     <form>
+     <p>
+       <label for="backgroundImage">Background</label>
+       <select name="backgroundImage">
+        <option value="boromir.jpg">Boromir</option>
+        <option value="dog.jpg">Dog</option>
+        <option value="philosoraptor.jpg">Philosoraptor</option>
+        <option value="roll_safe.jpg">Roll Safe</option>
+        <option value="success_kid.jpg">Success Kid</option>
+       </select>
+      </p>
       <p>
         <label for="topText">Top Text</label>
         <input name="topText" placeholder="Text for top of image." value="">
+      </p>
+      <p>
+        <label for="topTextAlign">Top Text Alignment</label>
+        <select name="topTextAlign">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </select>
       </p>
       <p>
         <label for="bottomText">Bottom Text</label>
         <input name="bottomText" placeholder="Text for bottom of image." value="">
       </p>
       <p>
-        <label for="backgroundImage">Background</label>
-        <select name="backgroundImage">
-          <option value="boromir.jpg">boromir</option>
-          <option value="dog.jpg">dog</option>
-          <option value="fry.jpg">fry</option>
-          <option value="heman.jpg">heman</option>
-          <option value="picard.jpg">picard</option>
-        </select>
-      </p>
+          <label for="bottomTextAlign">Bottom Text Alignment</label>
+          <select name="bottomTextAlign">
+            <option value="left">Left</option>
+            <option value="center">Center</option>
+            <option value="right">Right</option>
+          </select>
+        </p>
       <p><input type="submit" value="Download Image"></p>
     </form>
   </div>
