@@ -18,10 +18,12 @@
 .top-text {
     position: absolute;
     top: 0;
+    width: 100%;
 }
 .bottom-text {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 /* Form Styles */
